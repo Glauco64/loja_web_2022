@@ -12,24 +12,50 @@
 
 <body class="white">
     <main>
-        <header class="bg-blue">
-            <div class="logo">
+        <header class="row">
+            <div class="logo col-2">
                 <img src="img/logo.png" alt="Logomarca Amazon" height="50">
             </div>
-            <div class="localizacao">
+            <div class="localizacao col-2">
                 <div id="img-local">?</div>
                 <div>
                     <span>Olá <br></span>
                     <span><b>Selecione o endereço</b></span>
                 </div>
             </div>
-            <div class="pesquisa"><input type="text"></div>
-            <div class="login"><span>Olá</span>
+            <div class="pesquisa col-4">
+                <form action="selectTipo" class="formPesquisa">
+                    <label for=""></label>
+                    <select name="tipoProduto" id="selectTipo" title="Tipo de Produto">
+                        <option value="0" selected>
+                            Todos os produtos
+                        </option>
+                        <option value="1">
+                            Eletrônicos
+                        </option>
+                        <option value="2">
+                            Casa
+                        </option>
+                    </select>
+
+                    <label for="nomeProduto"></label>
+                    <input type="text" name="nomeProduto" title="Nome do Produto" id="nomeProduto" placeholder="Nome do Produto">
+
+                    <!-- <label for=""></label> -->
+                    <!-- <input type="submit"> -->
+                    <button type="submit" title="Fazer Pesquisa" >?</button>
+                </form>
+            </div>
+            <div class="login col-1"><span>Olá</span>
                 <span>Faça seu login</span>
             </div>
-            <div class="pedidos">
-                <span>Devolução <br></span>
-                <span>E pedidos</span>
+            <div class="pedidos col-1">
+                <span>Devoluções</span>
+                <span>e pedidos</span>
+            </div>
+            <div class="carrinho col-1">
+                <span>0</span>
+                <span>CAR</span>
             </div>
         </header>
 

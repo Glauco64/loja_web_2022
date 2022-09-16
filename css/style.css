@@ -1,5 +1,5 @@
 .white {
-    color: white;
+    color: #2222;
 }
 .bg-gray {
     background-color: gray;
@@ -12,21 +12,22 @@ body {
     font-size: 13px;
     color: black;
 }
-.localizacao {
-    position: relative;
-    left: 200px;
-    bottom: 63px;
+.logo img {
+    height: 100%;
+    width: auto;
+    
 }
-#img-local {
-    position: relative;
-    right: 20px;
-    top: 20px;
+header {
+    background-color: #131921;
+    color: #ffffff;
 }
 nav {
     background-color: rgb(35, 47, 62);
+    color: #ffffff;
     padding: 15px 0px 15px 0px;
 }
 nav a {
     color: white;
     text-decoration: none;
+    padding: 0 40px 0 40px;
 }
